@@ -1,12 +1,8 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Button, Text } from '@tarojs/components'
 import { connect } from '@tarojs/redux'
-
 import { add, minus, asyncAdd } from '../../actions/counter'
-
 import './index.scss'
-
-
 @connect(({ counter }) => ({
   counter
 }), (dispatch) => ({
@@ -20,6 +16,7 @@ import './index.scss'
     dispatch(asyncAdd())
   }
 }))
+
 class Index extends Component {
 
     config = {
