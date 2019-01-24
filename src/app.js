@@ -8,6 +8,7 @@ import configStore from './store'
 
 import './app.scss'
 
+
 // 如果需要在 h5 环境中开启 React Devtools
 // 取消以下注释：
 // if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5')  {
@@ -20,13 +21,37 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/index/index'
+      'pages/home/index',
+      'pages/company/index',
+      'pages/contact/index',
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      list: [{
+        pagePath: "pages/home/index",
+        text: "产品首页",
+        iconPath: "./img/home.png",
+        selectedIconPath: "./img/home.png"
+      }, {
+        pagePath: "pages/company/index",
+        text: "公司介绍",
+        iconPath: "./img/home.png",
+        selectedIconPath: "./img/home.png"
+      }, {
+        pagePath: "pages/contact/index",
+        text: "联系我们",
+        iconPath: "./img/home.png",
+        selectedIconPath: "./img/home.png"
+      }],
+      color: '#333',
+      selectedColor: '#333',
+      backgroundColor: '#fff',
+      borderStyle: '#ccc'
     }
   }
 
