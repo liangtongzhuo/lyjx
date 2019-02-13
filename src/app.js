@@ -36,20 +36,20 @@ class App extends Component {
         pagePath: "pages/home/index",
         text: "产品首页",
         iconPath: "./img/home.png",
-        selectedIconPath: "./img/home.png"
+        selectedIconPath: "./img/home1.png"
       }, {
         pagePath: "pages/company/index",
         text: "公司介绍",
-        iconPath: "./img/home.png",
-        selectedIconPath: "./img/home.png"
+        iconPath: "./img/company.png",
+        selectedIconPath: "./img/company1.png"
       }, {
         pagePath: "pages/contact/index",
         text: "联系我们",
-        iconPath: "./img/home.png",
-        selectedIconPath: "./img/home.png"
+        iconPath: "./img/contact.png",
+        selectedIconPath: "./img/contact1.png"
       }],
       color: '#333',
-      selectedColor: '#333',
+      selectedColor: '#004277',
       backgroundColor: '#fff',
       borderStyle: '#ccc'
     }
