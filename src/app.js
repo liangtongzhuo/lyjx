@@ -24,6 +24,7 @@ class App extends Component {
       'pages/home/index',
       'pages/company/index',
       'pages/contact/index',
+      'pages/web/index',
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -51,7 +52,6 @@ class App extends Component {
       color: '#333',
       selectedColor: '#004277',
       backgroundColor: '#fff',
-      borderStyle: '#ccc'
     }
   }
 

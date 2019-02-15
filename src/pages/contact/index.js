@@ -10,7 +10,6 @@ class Index extends Component {
   constructor() {
     super(...arguments)
     this.state = {
-      current: 0,
       markers: [
         {
           // iconPath: '/resources/others.png',
@@ -23,10 +22,15 @@ class Index extends Component {
       ]
     }
   }
-  handleClick(value) {
-    this.setState({
-      current: value
-    })
+  makePhoneCall() {
+    Taro.makePhoneCall(18703792710)
+      .then()
+      .catch(e => {
+        console.log(e)
+      })
+  }
+  click() {
+    Taro.navigateTo({ url: '/pages/web/index' })
   }
 
   componentWillReceiveProps(nextProps) {
@@ -43,12 +47,20 @@ class Index extends Component {
     return (
       <View className="contact">
         <AtDivider content="联系方式" className="line" />
-        <Text className="lab">联系人：李某某</Text>
-        <Text className="lab">手机：182388888888</Text>
-        <Text className="lab">电话号码：123131312321</Text>
-        <Text className="lab">邮箱地址：123131232131</Text>
-        <Text className="lab">公司网址：123131232131</Text>
-        <Text className="lab">公司位置：123131232131</Text>
+        <Text className="lab">联系人：刘先生</Text>
+        <Text className="lab" onClick={this.makePhoneCall}>
+          手机号码：<Text className="blue">18703792710</Text>
+        </Text>
+        <Text className="lab" onClick={this.click}>
+          公司网址：<Text className="blue">http://www.lyszjx.com/</Text>
+        </Text>
+        <Text className="lab">
+          邮箱地址：lyszjx@126.com
+        </Text>
+        <Text className="lab">
+          公司位置：洛阳市涧西区工业园区
+        </Text>
+        <AtDivider content="地图位置" className="line" />
         <Map
           scale="15"
           longitude="112.354603"

@@ -7,7 +7,7 @@ import {
   AtDivider,
   AtButton
 } from 'taro-ui'
-
+import Data from '../../data'
 import './index.scss'
 
 class Home extends Component {
@@ -30,6 +30,22 @@ class Home extends Component {
   componentDidHide() {}
 
   render() {
+    const items = Data.map((item, index) => {
+      return (
+        <View className="item" key={index}>
+          <Image
+            className="item-img"
+            src="http://lyszjx.liangtongzhuo.com/uploadfiles/1111111.jpeg"
+            mode="widthFix"
+          />
+          <Text className="item-name">输送社保</Text>
+          <Text className="item-sub-name">洛阳晟尊机械设备有限公司</Text>
+          <AtButton className="item-button" type="primary" size="small">
+            查看详情
+          </AtButton>
+        </View>
+      )
+    })
     return (
       <View className="home">
         <Swiper
@@ -115,33 +131,7 @@ class Home extends Component {
         </View>
         <AtDivider content="产品展示" className="line" />
 
-        <View className="list-content">
-          <View className="item">
-            <Image
-              className="item-img"
-              src="http://lyszjx.liangtongzhuo.com/uploadfiles/1111111.jpeg"
-              mode="widthFix"
-            />
-            <Text className="item-name">输送社保</Text>
-            <Text className="item-sub-name">洛阳晟尊机械设备有限公司</Text>
-            <AtButton className="item-button" type="primary" size="small">
-              查看详情
-            </AtButton>
-          </View>
-
-          <View className="item">
-            <Image
-              className="item-img"
-              src="http://lyszjx.liangtongzhuo.com/uploadfiles/1111111.jpeg"
-              mode="widthFix"
-            />
-            <Text className="item-name">输送社保</Text>
-            <Text className="item-sub-name">洛阳晟尊机械设备有限公司</Text>
-            <AtButton className="item-button" type="primary" size="small">
-              查看详情
-            </AtButton>
-          </View>
-        </View>
+        <View className="list-content">{items}</View>
       </View>
     )
   }
