@@ -24,7 +24,7 @@ class Home extends Component {
   componentDidHide() {}
 
   render() {
-    return <WebView src="http://www.lyszjx.com/" />
+    return <WebView src="https://lyszjx.liangtongzhuo.com" />
   }
 }
 

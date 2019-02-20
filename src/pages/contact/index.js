@@ -23,11 +23,11 @@ class Index extends Component {
     }
   }
   makePhoneCall() {
-    Taro.makePhoneCall(18703792710)
+    Taro.makePhoneCall({
+      phoneNumber: '18703792710'
+    })
       .then()
-      .catch(e => {
-        console.log(e)
-      })
+      .catch(e => {})
   }
   click() {
     Taro.navigateTo({ url: '/pages/web/index' })
@@ -54,12 +54,8 @@ class Index extends Component {
         <Text className="lab" onClick={this.click}>
           公司网址：<Text className="blue">http://www.lyszjx.com/</Text>
         </Text>
-        <Text className="lab">
-          邮箱地址：lyszjx@126.com
-        </Text>
-        <Text className="lab">
-          公司位置：洛阳市涧西区工业园区
-        </Text>
+        <Text className="lab">邮箱地址：lyszjx@126.com</Text>
+        <Text className="lab">公司位置：洛阳市涧西区工业园区</Text>
         <AtDivider content="地图位置" className="line" />
         <Map
           scale="15"

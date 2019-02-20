@@ -2,7 +2,7 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "lyjx",
 	"description": "ltz ",
-	"appid": "touristappid",
+	"appid": "wx3183d8e888ea65ce",
 	"setting": {
 		"urlCheck": false,
 		"es6": false,
