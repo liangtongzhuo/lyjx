@@ -66,28 +66,21 @@ class Home extends Component {
           <SwiperItem>
             <Image
               className="item-img"
-              src="http://lyszjx.liangtongzhuo.com/uploadfiles/WechatIMG1612.jpeg"
+              src="http://www.lyszjx.com/Upload/201903/20190307102204_6318.jpg"
               mode="widthFix"
             />
           </SwiperItem>
           <SwiperItem>
             <Image
               className="item-img"
-              src="http://lyszjx.liangtongzhuo.com/uploadfiles/WechatIMG1611.jpeg"
+              src="http://www.lyszjx.com/Upload/201902/20190220151109_3882.jpg"
               mode="widthFix"
             />
           </SwiperItem>
           <SwiperItem>
             <Image
               className="item-img"
-              src="http://lyszjx.liangtongzhuo.com/uploadfiles/WechatIMG1610.jpeg"
-              mode="widthFix"
-            />
-          </SwiperItem>
-          <SwiperItem>
-            <Image
-              className="item-img"
-              src="http://lyszjx.liangtongzhuo.com/uploadfiles/WechatIMG1611.jpeg"
+              src="http://www.lyszjx.com/Upload/201903/20190301160509_3623.jpg"
               mode="widthFix"
             />
           </SwiperItem>
@@ -96,45 +89,29 @@ class Home extends Component {
           洛阳晟尊机械设备有限公司是一家集科研开发、制造、销售、服务为一体的现代化企业。公司主营产品：超高压压球机、大型型煤生产线、高效搅拌机、球磨机、旋回破、圆锥破、高效细碎机等。
         </AtNoticebar>
         <View className="at-row">
-          <View className="at-col" onClick={this.onClickList.bind(this, 0, '成型设备')}>
+          <View className="at-col" onClick={this.onClickList.bind(this, 0, '压球机')}>
             <Image
               className="at-img"
-              src="https://jdc.jd.com/img/200"
+              src="http://www.lyszjx.com/Upload/201903/20190306153343_8495.jpg"
               mode="widthFix"
             />
-            <Text className="at-name">成型设备</Text>
+            <Text className="at-name">压球机</Text>
           </View>
-          <View className="at-col" onClick={this.onClickList.bind(this, 1, '混合设备')}>
+          <View className="at-col" onClick={this.onClickList.bind(this, 1, '压球机生产线')}>
             <Image
               className="at-img"
-              src="https://jdc.jd.com/img/200"
+              src="http://www.lyszjx.com/Upload/201901/20190128152916_7344.jpg"
               mode="widthFix"
             />
-            <Text className="at-name">混合设备</Text>
+            <Text className="at-name">压球机生产线</Text>
           </View>
-          <View className="at-col" onClick={this.onClickList.bind(this, 2, '破碎设备')}>
+          <View className="at-col" onClick={this.onClickList.bind(this, 2, '混合机设备')}>
             <Image
               className="at-img"
-              src="https://jdc.jd.com/img/200"
+              src="http://www.lyszjx.com/Upload/201901/20190128154641_4211.jpg"
               mode="widthFix"
             />
-            <Text className="at-name">破碎设备</Text>
-          </View>
-          <View className="at-col" onClick={this.onClickList.bind(this, 3, '输送社保')}>
-            <Image
-              className="at-img"
-              src="https://jdc.jd.com/img/200"
-              mode="widthFix"
-            />
-            <Text className="at-name">输送社保</Text>
-          </View>
-          <View className="at-col" onClick={this.onClickList.bind(this, 4, '其它设备')}>
-            <Image
-              className="at-img"
-              src="https://jdc.jd.com/img/200"
-              mode="widthFix"
-            />
-            <Text className="at-name">其它设备</Text>
+            <Text className="at-name">混合机设备</Text>
           </View>
         </View>
         <AtDivider content="产品展示" className="line" />

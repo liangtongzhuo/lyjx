@@ -51,14 +51,14 @@ class Index extends Component {
         <Text className="lab" onClick={this.makePhoneCall}>
           手机号码：<Text className="blue">18703792710</Text>
         </Text>
-        <Text className="lab" onClick={this.click}>
+        {/* <Text className="lab" onClick={this.click}>
           公司网址：<Text className="blue">http://www.lyszjx.com/</Text>
-        </Text>
+        </Text> */}
         <Text className="lab">邮箱地址：lyszjx@126.com</Text>
         <Text className="lab">公司位置：洛阳市涧西区工业园区</Text>
         <AtDivider content="地图位置" className="line" />
         <Map
-          scale="15"
+          scale="18"
           longitude="112.354603"
           latitude="34.654604"
           style="width: 100%;height: 200px;"

@@ -32,24 +32,24 @@ class Index extends Component {
           indicatorDots
           autoplay
         >
-          <SwiperItem>
+         <SwiperItem>
             <Image
               className="item-img"
-              src="http://lyszjx.liangtongzhuo.com/uploadfiles/WechatIMG1612.jpeg"
+              src="http://www.lyszjx.com/Upload/201903/20190307102204_6318.jpg"
               mode="widthFix"
             />
           </SwiperItem>
           <SwiperItem>
             <Image
               className="item-img"
-              src="http://lyszjx.liangtongzhuo.com/uploadfiles/WechatIMG1611.jpeg"
+              src="http://www.lyszjx.com/Upload/201902/20190220151109_3882.jpg"
               mode="widthFix"
             />
           </SwiperItem>
           <SwiperItem>
             <Image
               className="item-img"
-              src="http://lyszjx.liangtongzhuo.com/uploadfiles/WechatIMG1610.jpeg"
+              src="http://www.lyszjx.com/Upload/201903/20190301160509_3623.jpg"
               mode="widthFix"
             />
           </SwiperItem>
