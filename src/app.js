@@ -78,4 +78,5 @@ class App extends Component {
   }
 }
 
+wx.showShareMenu()
 Taro.render(<App />, document.getElementById('app'))
